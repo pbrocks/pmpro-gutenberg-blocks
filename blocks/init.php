@@ -63,8 +63,8 @@ add_action( 'enqueue_block_editor_assets', 'pmpro_block_editor_scripts' );
  * Enqueue front end and editor JavaScript and CSS
  */
 function pmpro_block_scripts() {
-	$block_path = 'js/frontend.blocks.js';
-	$style_path = 'css/blocks.style.css';
+	$block_path = '../js/frontend.blocks.js';
+	$style_path = '../css/blocks.style.css';
 
 	// Enqueue the bundled block JS file.
 	wp_enqueue_script(

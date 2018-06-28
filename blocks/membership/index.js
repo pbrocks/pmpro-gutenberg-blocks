@@ -45,7 +45,7 @@ function get_ajax_url() {
 
 jQuery(document).ready(function($) {
 	var data = {
-		'action': 'pmpro_getAllLevels',
+		'action': 'pmpro_get_all_levels',
 	};
 
 	var ajax_url = get_ajax_url();

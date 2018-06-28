@@ -30,6 +30,16 @@ function pmpro_membership_register_dynamic_block() {
 	] );
 }
 
+function pmpro_get_all_levels_ajax() {
+	$all_levels = pmpro_getAllLevels();
+	$to_pass    = [];
+	foreach ( $all_levels as $level ) {
+		$to_pass[ $level->id ] = $level->name;
+	}
+	echo( wp_json_encode( $to_pass ) );
+}
+add_action( 'wp_ajax_pmpro_get_all_levels', __NAMESPACE__ . '\pmpro_get_all_levels_ajax' );
+
 /**
  * Server rendering for /blocks/examples/12-dynamic
  *
