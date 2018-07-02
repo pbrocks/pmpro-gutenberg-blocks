@@ -12,21 +12,21 @@ defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 /**
  * Dynamic Block Requires
  */
-require_once 'checkout-button/index.php';
-// require_once 'checkout-button-old/index.php';
-require_once 'account-page/index.php';
-require_once 'account-membership-section/index.php';
-require_once 'account-profile-section/index.php';
-require_once 'account-invoices-section/index.php';
-require_once 'account-links-section/index.php';
-require_once 'billing-page/index.php';
-// require_once 'cancel-page/index.php';
-// require_once 'checkout-page/index.php';
-// require_once 'confirmation-page/index.php';
-// require_once 'invoice-page/index.php';
-require_once 'levels-page/index.php';
-// require_once 'member/index.php';
-require_once 'membership/index.php';
+require_once 'checkout-button/block.php';
+// require_once 'checkout-button-old/block.php';
+require_once 'account-page/block.php';
+require_once 'account-membership-section/block.php';
+require_once 'account-profile-section/block.php';
+require_once 'account-invoices-section/block.php';
+require_once 'account-links-section/block.php';
+require_once 'billing-page/block.php';
+// require_once 'cancel-page/block.php';
+// require_once 'checkout-page/block.php';
+// require_once 'confirmation-page/block.php';
+// require_once 'invoice-page/block.php';
+require_once 'levels-page/block.php';
+// require_once 'member/block.php';
+require_once 'membership/block.php';
 
 /**
  * Enqueue block editor only JavaScript and CSS
