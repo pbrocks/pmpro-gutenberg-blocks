@@ -26,6 +26,8 @@
     "webpack": "^3.12.0"
   },
   "dependencies": {
-    "cross-loader": "^0.1.0"
+    "cross-loader": "^0.1.0",
+    "hoek": "^5.0.3",
+    "tunnel-agent": "^0.6.0"
   }
 }
