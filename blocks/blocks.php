@@ -27,6 +27,7 @@ require_once 'billing-page/block.php';
 require_once 'levels-page/block.php';
 // require_once 'member/block.php';
 require_once 'membership/block.php';
+// require_once 'boilerplate/block.php';
 
 /**
  * Enqueue block editor only JavaScript and CSS
