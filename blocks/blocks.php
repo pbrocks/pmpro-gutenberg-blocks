@@ -17,19 +17,17 @@ defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
  * Dynamic Block Requires
  */
 require_once( 'checkout-button/block.php' );
-// require_once( 'checkout-button-old/block.php' );
-require_once( 'account-page/block.php' );
+// require_once( 'account-page/block.php' );
 require_once( 'account-membership-section/block.php' );
 require_once( 'account-profile-section/block.php' );
 require_once( 'account-invoices-section/block.php' );
 require_once( 'account-links-section/block.php' );
 require_once( 'billing-page/block.php' );
-// require_once( 'cancel-page/block.php' );
-// require_once( 'checkout-page/block.php' );
-// require_once( 'confirmation-page/block.php' );
-// require_once( 'invoice-page/block.php' );
+require_once( 'cancel-page/block.php' );
+require_once( 'checkout-page/block.php' );
+require_once( 'confirmation-page/block.php' );
+require_once( 'invoice-page/block.php' );
 require_once( 'levels-page/block.php' );
-// require_once( 'member/block.php' );
 require_once( 'membership/block.php' );
 
 /**
