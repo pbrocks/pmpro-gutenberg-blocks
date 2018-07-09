@@ -39,7 +39,7 @@ const {
      {
          title: __( 'PMPro Invoice Page', 'paid-memberships-pro' ),
          description: __( 'This page shows a single membership invoice or a list of all membership invoices for the current user.', 'paid-memberships-pro' ),
-         category: 'common',
+         category: 'pmpro',
          icon: 'archive',
          keywords: [
          ],

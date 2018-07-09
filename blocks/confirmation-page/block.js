@@ -39,7 +39,7 @@ const {
      {
          title: __( 'PMPro Confirmation Page', 'paid-memberships-pro' ),
          description: __( 'This page shows the confirmation message and details that are displayed after membership checkout.', 'paid-memberships-pro' ),
-         category: 'common',
+         category: 'pmpro',
          icon: 'yes',
          keywords: [
          ],

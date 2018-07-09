@@ -39,7 +39,7 @@ const {
      {
          title: __( 'PMPro Account Links Section', 'paid-memberships-pro' ),
          description: __( 'Displays a user\'s links information', 'paid-memberships-pro' ),
-         category: 'common',
+         category: 'pmpro',
          icon: 'external',
          keywords: [
          ],

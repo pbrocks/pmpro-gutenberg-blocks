@@ -39,7 +39,7 @@ const {
      {
          title: __( 'PMPro Checkout Page', 'paid-memberships-pro' ),
          description: __( 'This page shows the checkout form.', 'paid-memberships-pro' ),
-         category: 'common',
+         category: 'pmpro',
          icon: 'cart',
          keywords: [
          ],

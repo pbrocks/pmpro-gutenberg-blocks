@@ -39,7 +39,7 @@ const {
      {
          title: __( 'PMPro Account Membership Section', 'paid-memberships-pro' ),
          description: __( 'Displays a user\'s membership information', 'paid-memberships-pro' ),
-         category: 'common',
+         category: 'pmpro',
          icon: 'groups',
          keywords: [
          ],

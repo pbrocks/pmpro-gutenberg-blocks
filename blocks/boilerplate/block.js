@@ -34,7 +34,7 @@ const {
      {
          title: __( 'Boilerplate', 'paid-memberships-pro' ),
          description: __( 'This is a blank block.', 'paid-memberships-pro' ),
-         category: 'common',
+         category: 'pmpro',
          icon: 'sos',
          keywords: [
          ],

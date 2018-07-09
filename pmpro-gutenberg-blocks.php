@@ -14,10 +14,8 @@ namespace PMPro;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 
-// TODO:Uncomment once editing Gutenberg categories is implemented
-/*
-function pmpro_block_categories( $categories, $post ) {
-	if ( $post->post_type !== 'post' ) {
+add_filter( 'block_categories', function( $categories, $post ) {
+	if ( 'post' !== $post->post_type ) {
 		return $categories;
 	}
 	return array_merge(
@@ -25,13 +23,11 @@ function pmpro_block_categories( $categories, $post ) {
 		array(
 			array(
 				'slug'  => 'pmpro',
-				'title' => __( 'PMPro', 'paid-memberships-pro' ),
+				'title' => __( 'Paid Memberships Pro', 'paid-memberships-pro' ),
 			),
 		)
 	);
-}
-add_filter( 'block_categories', 'pmpro_block_categories', 10, 2 );
-*/
+}, 10, 2 );
 
 require_once( 'blocks/blocks.php' );
 

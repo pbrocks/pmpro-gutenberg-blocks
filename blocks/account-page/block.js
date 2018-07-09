@@ -40,7 +40,7 @@ const {
      {
          title: __( 'PMPro Account Page', 'paid-memberships-pro' ),
          description: __( 'Displays a user\'s account information', 'paid-memberships-pro' ),
-         category: 'common',
+         category: 'pmpro',
          icon: 'id',
          keywords: [
          ],

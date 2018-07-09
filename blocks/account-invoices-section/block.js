@@ -39,7 +39,7 @@ const {
      {
          title: __( 'PMPro Account Invoices Section', 'paid-memberships-pro' ),
          description: __( 'Displays a user\'s invoices information', 'paid-memberships-pro' ),
-         category: 'common',
+         category: 'pmpro',
          icon: 'archive',
          keywords: [
          ],

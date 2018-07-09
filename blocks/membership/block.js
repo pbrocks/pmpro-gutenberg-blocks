@@ -70,7 +70,7 @@ jQuery(document).ready(function($) {
      {
          title: __( 'PMPro Membership Check', 'paid-memberships-pro' ),
          description: __( 'Only shows content to specific levels.', 'paid-memberships-pro' ),
-         category: 'common',
+         category: 'pmpro',
          icon: 'hidden',
          keywords: [
          ],

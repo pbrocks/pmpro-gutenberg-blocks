@@ -39,7 +39,7 @@ const {
      {
          title: __( 'PMPro Levels Page', 'paid-memberships-pro' ),
          description: __( 'This page shows the membership level options available displayed in the order sorted via the Memberships > Membership Levels admin', 'paid-memberships-pro' ),
-         category: 'common',
+         category: 'pmpro',
          icon: 'chart-bar',
          keywords: [
          ],

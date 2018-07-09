@@ -39,7 +39,7 @@ const {
      {
          title: __( 'PMPro Billing Page', 'paid-memberships-pro' ),
          description: __( 'For members with an active subscription, this page shows the member’s billing information and allows them to update the payment method.', 'paid-memberships-pro' ),
-         category: 'common',
+         category: 'pmpro',
          icon: 'format-aside',
          keywords: [
          ],

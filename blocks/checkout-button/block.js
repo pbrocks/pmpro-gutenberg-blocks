@@ -36,7 +36,7 @@ const {
      {
          title: __( 'PMPro Checkout Button', 'paid-memberships-pro' ),
          description: __( 'Let users check out for a level.', 'paid-memberships-pro' ),
-         category: 'common',
+         category: 'pmpro',
          icon: 'migrate',
          keywords: [
              __( 'buy', 'paid-memberships-pro' ),

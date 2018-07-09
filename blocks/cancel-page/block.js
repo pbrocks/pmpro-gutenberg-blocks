@@ -39,7 +39,7 @@ const {
      {
          title: __( 'PMPro Cancel Page', 'paid-memberships-pro' ),
          description: __( 'This page shows links for a member to cancel their membership or a link to return to the Membership Account page.', 'paid-memberships-pro' ),
-         category: 'common',
+         category: 'pmpro',
          icon: 'no',
          keywords: [
          ],
