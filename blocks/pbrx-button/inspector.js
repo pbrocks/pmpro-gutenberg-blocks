@@ -28,8 +28,8 @@ export default class Inspector extends Component {
           <InspectorControls>
               <PanelBody>
                  <TextControl
-                     label={ __( 'Button pbr', 'paid-memberships-pro' ) }
-                     help={ __( 'Text for checkout button', 'paid-memberships-pro' ) }
+                     label={ __( 'Butt0n Text', 'paid-memberships-pro' ) }
+                     help={ __( 'Text for PBrx button', 'paid-memberships-pro' ) }
                      value={ text }
                      onChange={ text => setAttributes( { text } ) }
                  />

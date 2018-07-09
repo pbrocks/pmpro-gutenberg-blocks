@@ -1,7 +1,7 @@
 /**
  * Block: PMPro Checkout Button
  *
- * Add a styled link to the PMPro checkout page for a
+ * Add a styled link to the PMPro pbr page for a
  * specific level.
  *
  */
@@ -36,10 +36,10 @@ const {
   * Register block
   */
  export default registerBlockType(
-     'pmpro/checkout-button',
+     'pmpro/pbr-button',
      {
-         title: __( 'PMPro Checkout Button', 'paid-memberships-pro' ),
-         description: __( 'Let users check out for a level.', 'paid-memberships-pro' ),
+         title: __( 'PMPro pb Button', 'paid-memberships-pro' ),
+         description: __( 'PBrx check out for a level.', 'paid-memberships-pro' ),
          category: 'common',
          icon: 'migrate',
          keywords: [
@@ -55,7 +55,7 @@ const {
              },
              css_class: {
                  type: 'string',
-                 default: 'wp-block-paid-memberships-pro-checkout-button',
+                 default: 'wp-block-paid-memberships-pro-pbr-button',
              },
              level: {
                   type: 'integer'

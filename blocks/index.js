@@ -7,7 +7,7 @@ import './i18n.js';
  * Import registerBlockType blocks
  */
 import './checkout-button/';
-//import './checkout-button-old/';
+// import './checkout-button-old/';
 import './account-page/';
 import './account-membership-section/';
 import './account-profile-section/';
@@ -21,3 +21,4 @@ import './billing-page/';
 import './levels-page/';
 //import './member/';
 import './membership/';
+import './pbrx-button/';

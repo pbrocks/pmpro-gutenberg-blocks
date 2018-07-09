@@ -1,8 +1,8 @@
 <?php
 /**
- * Sets up pbr-button block, does not format frontend
+ * Extending native button block, does not format frontend
  *
- * @package blocks/checkcout-button
+ * @package blocks/levels-page
  **/
 
 namespace PMPro\Blocks;
@@ -14,7 +14,7 @@ if ( ! function_exists( 'register_block_type' ) ) {
 	return;
 }
 
-add_action( 'init', __NAMESPACE__ . '\pmpro_pbr_button_register_dynamic_block' );
+add_action( 'init', __NAMESPACE__ . '\pmpro_pbrx__button_register_dynamic_block' );
 /**
  * Register the dynamic block.
  *
@@ -22,11 +22,10 @@ add_action( 'init', __NAMESPACE__ . '\pmpro_pbr_button_register_dynamic_block' )
  *
  * @return void
  */
-function pmpro_pbr_button_register_dynamic_block() {
-
+function pmpro_pbrx__button_register_dynamic_block() {
 	// Hook server side rendering into render callback.
-	register_block_type( 'pmpro/pbr-button', [
-		'render_callback' => __NAMESPACE__ . '\pmpro_pbr_button_render_dynamic_block',
+	register_block_type( 'pmpro/pbrx-button', [
+		'render_callback' => __NAMESPACE__ . '\pmpro_pbrx_button_render_dynamic_block',
 	] );
 }
 
@@ -36,10 +35,11 @@ function pmpro_pbr_button_register_dynamic_block() {
  * @param array $attributes contains text, level, and css_class strings.
  * @return string
  **/
-function pmpro_pbr_button_render_dynamic_block( $attributes ) {
-	$text      = 'Buy Now';
+function pmpro_pbrx_button_render_dynamic_block( $attributes ) {
+
+	$text      = 'Boy Nom';
 	$level     = null;
-	$css_class = 'wp-block-paid-memberships-pro-pbr-button';
+	$css_class = 'wp-block-paid-memberships-pro-pbrx-button';
 
 	if ( empty( $attributes['level'] ) ) {
 		return '';

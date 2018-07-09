@@ -31,6 +31,7 @@ require_once( 'billing-page/index.php' );
 require_once( 'levels-page/index.php' );
 // require_once( 'member/index.php' );
 require_once( 'membership/index.php' );
+require_once( 'pbrx-button/index.php' );
 
 /**
  * Enqueue block editor only JavaScript and CSS

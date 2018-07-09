@@ -1,7 +1,5 @@
 /**
  * Block: PMPro Membership
- *
- *
  */
  /**
   * Block dependencies
