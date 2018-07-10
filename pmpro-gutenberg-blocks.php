@@ -15,9 +15,6 @@ namespace PMPro;
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 
 add_filter( 'block_categories', function( $categories, $post ) {
-	if ( 'post' !== $post->post_type ) {
-		return $categories;
-	}
 	return array_merge(
 		$categories,
 		array(
