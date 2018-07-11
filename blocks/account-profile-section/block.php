@@ -24,9 +24,11 @@ add_action( 'init', __NAMESPACE__ . '\pmpro_account_profile_section_register_dyn
  */
 function pmpro_account_profile_section_register_dynamic_block() {
 	// Hook server side rendering into render callback.
-	register_block_type( 'pmpro/account-profile-section', [
-		'render_callback' => __NAMESPACE__ . '\pmpro_account_profile_section_render_dynamic_block',
-	] );
+	register_block_type(
+		'pmpro/account-profile-section', [
+			'render_callback' => __NAMESPACE__ . '\pmpro_account_profile_section_render_dynamic_block',
+		]
+	);
 }
 
 /**
@@ -35,5 +37,9 @@ function pmpro_account_profile_section_register_dynamic_block() {
  * @return string
  **/
 function pmpro_account_profile_section_render_dynamic_block() {
-	return pmpro_shortcode_account( [ sections => 'profile' ] );
+	return pmpro_shortcode_account(
+		[
+			'sections' => 'profile',
+		]
+	);
 }

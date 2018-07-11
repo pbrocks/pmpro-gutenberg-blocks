@@ -14,7 +14,8 @@ namespace PMPro;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 
-add_filter( 'block_categories', function( $categories, $post ) {
+add_filter( 'block_categories', __NAMESPACE__ . '\place_blocks_in_panel', 10, 2 );
+function place_blocks_in_panel( $categories, $post ) {
 	return array_merge(
 		$categories,
 		array(
@@ -24,7 +25,7 @@ add_filter( 'block_categories', function( $categories, $post ) {
 			),
 		)
 	);
-}, 10, 2 );
+}
 
 require_once( 'blocks/blocks.php' );
 
