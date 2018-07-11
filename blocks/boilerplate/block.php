@@ -5,7 +5,7 @@
  * @package blocks/boilerplate
  **/
 
-namespace PMPro\Blocks\Boilerplate;
+namespace PMPro\blocks\boilerplate;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 

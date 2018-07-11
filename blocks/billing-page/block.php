@@ -5,7 +5,7 @@
  * @package blocks/billing-page
  **/
 
-namespace PMPro\Blocks\Billing_Page;
+namespace PMPro\blocks\billing_page;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 

@@ -5,7 +5,7 @@
  * @package blocks/confirmation-page
  **/
 
-namespace PMPro\Blocks\Confirmation_Page;
+namespace PMPro\blocks\confirmation_page;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 

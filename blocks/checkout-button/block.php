@@ -5,7 +5,7 @@
  * @package blocks/checkcout-button
  **/
 
-namespace PMPro\Blocks\Checkout_Button;
+namespace PMPro\blocks\checkout_button;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 

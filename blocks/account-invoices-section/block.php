@@ -5,7 +5,7 @@
  * @package blocks/account-page
  **/
 
-namespace PMPro\Blocks\Account_Invoices_Section;
+namespace PMPro\blocks\account_invoices_section;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 

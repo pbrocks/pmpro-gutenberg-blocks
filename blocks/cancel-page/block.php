@@ -5,7 +5,7 @@
  * @package blocks/cancel-page
  **/
 
-namespace PMPro\Blocks\Cancel_Page;
+namespace PMPro\blocks\cancel_page;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 

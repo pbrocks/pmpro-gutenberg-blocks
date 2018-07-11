@@ -5,7 +5,7 @@
  * @package blocks/levels-page
  **/
 
-namespace PMPro\Blocks\Levels_Page;
+namespace PMPro\blocks\levels_page;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 

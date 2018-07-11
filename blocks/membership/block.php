@@ -5,7 +5,7 @@
  * @package blocks/membership
  **/
 
-namespace PMPro\Blocks\Membership;
+namespace PMPro\blocks\membership;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 

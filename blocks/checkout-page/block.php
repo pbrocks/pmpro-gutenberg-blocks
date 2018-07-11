@@ -5,7 +5,7 @@
  * @package blocks/checkout-page
  **/
 
-namespace PMPro\Blocks\Checkout_Page;
+namespace PMPro\blocks\checkout_page;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 

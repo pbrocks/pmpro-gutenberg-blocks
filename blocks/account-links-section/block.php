@@ -5,7 +5,7 @@
  * @package blocks/account-page
  **/
 
-namespace PMPro\Blocks\Account_Links_Section;
+namespace PMPro\blocks\account_links_section;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 
