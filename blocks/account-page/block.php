@@ -5,7 +5,7 @@
  * @package blocks/account-page
  **/
 
-namespace PMPro\Blocks;
+namespace PMPro\blocks\account_page;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 
@@ -14,7 +14,7 @@ if ( ! function_exists( 'register_block_type' ) ) {
 	return;
 }
 
-add_action( 'init', __NAMESPACE__ . '\pmpro_account_page_register_dynamic_block' );
+add_action( 'init', __NAMESPACE__ . '\register_dynamic_block' );
 /**
  * Register the dynamic block.
  *
@@ -22,11 +22,11 @@ add_action( 'init', __NAMESPACE__ . '\pmpro_account_page_register_dynamic_block'
  *
  * @return void
  */
-function pmpro_account_page_register_dynamic_block() {
+function register_dynamic_block() {
 	// Hook server side rendering into render callback.
 	register_block_type(
 		'pmpro/account-page', [
-			'render_callback' => __NAMESPACE__ . '\pmpro_account_page_render_dynamic_block',
+			'render_callback' => __NAMESPACE__ . '\render_dynamic_block',
 		]
 	);
 }
@@ -37,7 +37,7 @@ function pmpro_account_page_register_dynamic_block() {
  * @param array $attributes contains text, level, and css_class strings.
  * @return string
  **/
-function pmpro_account_page_render_dynamic_block( $attributes ) {
+function render_dynamic_block( $attributes ) {
 	$str_atts = '';
 	if ( ! empty( $attributes['membership'] ) ) {
 		$str_atts .= 'membership, ';
