@@ -5,7 +5,7 @@
  * @package blocks/membership
  **/
 
-namespace PMPro\Blocks;
+namespace PMPro\Blocks\Membership;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 
@@ -14,7 +14,7 @@ if ( ! function_exists( 'register_block_type' ) ) {
 	return;
 }
 
-add_action( 'init', __NAMESPACE__ . '\pmpro_membership_register_dynamic_block' );
+add_action( 'init', __NAMESPACE__ . '\register_dynamic_block' );
 /**
  * Register the dynamic block.
  *
@@ -22,11 +22,11 @@ add_action( 'init', __NAMESPACE__ . '\pmpro_membership_register_dynamic_block' )
  *
  * @return void
  */
-function pmpro_membership_register_dynamic_block() {
+function register_dynamic_block() {
 
 	// Hook server side rendering into render callback.
 	register_block_type( 'pmpro/membership', [
-		'render_callback' => __NAMESPACE__ . '\pmpro_membership_render_dynamic_block',
+		'render_callback' => __NAMESPACE__ . '\render_dynamic_block',
 	] );
 }
 
@@ -46,7 +46,7 @@ add_action( 'wp_ajax_pmpro_get_all_levels', __NAMESPACE__ . '\pmpro_get_all_leve
  * @param array $attributes contains text, level, and css_class strings.
  * @return string
  **/
-function pmpro_membership_render_dynamic_block( $attributes ) {
+function render_dynamic_block( $attributes ) {
 	global $post;
 	$tag_modifier = '';
 	if ( ( ! array_key_exists( 'levels', $attributes ) || ! is_array( $attributes['levels'] ) ) && array_key_exists( 'uid', $attributes ) ) {

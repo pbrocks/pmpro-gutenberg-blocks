@@ -5,7 +5,7 @@
  * @package blocks/confirmation-page
  **/
 
-namespace PMPro\Blocks;
+namespace PMPro\Blocks\Confirmation_Page;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 
@@ -14,7 +14,7 @@ if ( ! function_exists( 'register_block_type' ) ) {
 	return;
 }
 
-add_action( 'init', __NAMESPACE__ . '\pmpro_confirmation_page_register_dynamic_block' );
+add_action( 'init', __NAMESPACE__ . '\register_dynamic_block' );
 /**
  * Register the dynamic block.
  *
@@ -22,10 +22,10 @@ add_action( 'init', __NAMESPACE__ . '\pmpro_confirmation_page_register_dynamic_b
  *
  * @return void
  */
-function pmpro_confirmation_page_register_dynamic_block() {
+function register_dynamic_block() {
 	// Hook server side rendering into render callback.
 	register_block_type( 'pmpro/confirmation-page', [
-		'render_callback' => __NAMESPACE__ . '\pmpro_confirmation_page_render_dynamic_block',
+		'render_callback' => __NAMESPACE__ . '\render_dynamic_block',
 	] );
 }
 
@@ -35,6 +35,6 @@ function pmpro_confirmation_page_register_dynamic_block() {
  * @param array $attributes contains text, level, and css_class strings.
  * @return string
  **/
-function pmpro_confirmation_page_render_dynamic_block( $attributes ) {
+function render_dynamic_block( $attributes ) {
 	return pmpro_loadTemplate( 'confirmation', 'local', 'pages' );
 }

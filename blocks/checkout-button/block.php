@@ -5,7 +5,7 @@
  * @package blocks/checkcout-button
  **/
 
-namespace PMPro\Blocks;
+namespace PMPro\Blocks\Checkout_Button;
 
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 
@@ -14,7 +14,7 @@ if ( ! function_exists( 'register_block_type' ) ) {
 	return;
 }
 
-add_action( 'init', __NAMESPACE__ . '\pmpro_checkout_button_register_dynamic_block' );
+add_action( 'init', __NAMESPACE__ . '\register_dynamic_block' );
 /**
  * Register the dynamic block.
  *
@@ -22,11 +22,11 @@ add_action( 'init', __NAMESPACE__ . '\pmpro_checkout_button_register_dynamic_blo
  *
  * @return void
  */
-function pmpro_checkout_button_register_dynamic_block() {
+function register_dynamic_block() {
 
 	// Hook server side rendering into render callback.
 	register_block_type( 'pmpro/checkout-button', [
-		'render_callback' => __NAMESPACE__ . '\pmpro_checkout_button_render_dynamic_block',
+		'render_callback' => __NAMESPACE__ . '\render_dynamic_block',
 	] );
 }
 
@@ -36,7 +36,7 @@ function pmpro_checkout_button_register_dynamic_block() {
  * @param array $attributes contains text, level, and css_class strings.
  * @return string
  **/
-function pmpro_checkout_button_render_dynamic_block( $attributes ) {
+function render_dynamic_block( $attributes ) {
 	$text      = 'Buy Now';
 	$level     = null;
 	$css_class = 'wp-block-paid-memberships-pro-checkout-button';
