@@ -1,0 +1,26 @@
+/**
+ * Editor styles for the admin
+ */
+.pmp-block-button + .blocks-button__inline-link .editor-url-input {
+  display: inline-block;
+  width: auto; }
+
+.pmp-block-button + .blocks-button__inline-link .components-button {
+  display: inline-block; }
+
+.pmp-block-button + .blocks-button__inline-link svg {
+  vertical-align: middle;
+  margin-right: 8px; }
+/**
+ * Editor styles for the admin
+ */
+.pmp-block-button-too + .blocks-button__inline-link .editor-url-input {
+  display: inline-block;
+  width: auto; }
+
+.pmp-block-button-too + .blocks-button__inline-link .components-button {
+  display: inline-block; }
+
+.pmp-block-button-too + .blocks-button__inline-link svg {
+  vertical-align: middle;
+  margin-right: 8px; }

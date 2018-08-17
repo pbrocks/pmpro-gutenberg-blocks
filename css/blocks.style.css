@@ -3,25 +3,122 @@
  * editor-specific styles using the same selectors will take precedence.
  */
 .wp-block-paid-memberships-pro-checkout-button {
-  background-color: #EFEFEF;
-  background-image: none;
-  border: 1px solid #D6D6D6;
-  border-radius: 4px;
-  box-shadow: none;
-  color: #444;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 700;
-  margin: 0;
-  padding: 6px 12px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap; }
+  background: #F39C12;
+  border: none;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #FFF;
+  font-size: 1.8rem;
+  padding: 1.45rem 2.9rem;
+  text-shadow: none; }
+/**
+ * Button styles
+ * Loads on front end and back end
+ */
+.pmp-block-button {
+  margin: 0 0 1.2em 0;
+  position: relative; }
+  .pmp-block-button .blocks-rich-text {
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+  .pmp-block-button .components-autocomplete {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+    position: relative; }
+  .pmp-block-button .pmp-button {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1 !important;
+    background-color: #32373c;
+    border: none;
+    border-radius: 50px;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    padding: .6em 1em;
+    text-decoration: none;
+    word-break: break-word;
+    transition: .3s ease;
+    display: inline-block; }
+    .pmp-block-button .pmp-button:hover {
+      box-shadow: inset 0 0 200px rgba(255, 255, 255, 0.15); }
+  .pmp-block-button .pmp-button-shape-square {
+    border-radius: 0; }
+  .pmp-block-button .pmp-button-shape-rounded {
+    border-radius: 5px; }
+  .pmp-block-button .pmp-button-shape-circular {
+    border-radius: 100px; }
+  .pmp-block-button .pmp-button-size-small {
+    font-size: 14px; }
+  .pmp-block-button .pmp-button-size-medium {
+    font-size: 20px; }
+  .pmp-block-button .pmp-button-size-large {
+    font-size: 26px;
+    padding: .8em 1.2em; }
+  .pmp-block-button .pmp-button-size-extralarge {
+    font-size: 34px;
+    padding: .8em 1.2em; }
+
+.pmp-button-right {
+  transform: translateX(-100%);
+  left: 100%;
+  position: relative; }
+
+.pmp-button-center {
+  margin: 0 auto; }
+/**
+ * Button styles
+ * Loads on front end and back end
+ */
+.pmp-block-button-too {
+  margin: 0 0 1.2em 0;
+  position: relative; }
+  .pmp-block-button-too .blocks-rich-text {
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+  .pmp-block-button-too .components-autocomplete {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+    position: relative; }
+  .pmp-block-button-too .pmp-button {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1 !important;
+    background-color: #32373c;
+    border: none;
+    border-radius: 50px;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    padding: .6em 1em;
+    text-decoration: none;
+    word-break: break-word;
+    transition: .3s ease;
+    display: inline-block; }
+    .pmp-block-button-too .pmp-button:hover {
+      box-shadow: inset 0 0 200px rgba(255, 255, 255, 0.15); }
+  .pmp-block-button-too .pmp-button-shape-square {
+    border-radius: 0; }
+  .pmp-block-button-too .pmp-button-shape-rounded {
+    border-radius: 5px; }
+  .pmp-block-button-too .pmp-button-shape-circular {
+    border-radius: 100px; }
+  .pmp-block-button-too .pmp-button-size-small {
+    font-size: 14px; }
+  .pmp-block-button-too .pmp-button-size-medium {
+    font-size: 20px; }
+  .pmp-block-button-too .pmp-button-size-large {
+    font-size: 26px;
+    padding: .8em 1.2em; }
+  .pmp-block-button-too .pmp-button-size-extralarge {
+    font-size: 34px;
+    padding: .8em 1.2em; }
+
+.pmp-button-right {
+  transform: translateX(-100%);
+  left: 100%;
+  position: relative; }
+
+.pmp-button-center {
+  margin: 0 auto; }

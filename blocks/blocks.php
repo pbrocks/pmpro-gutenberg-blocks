@@ -17,18 +17,9 @@ defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
  * Dynamic Block Requires
  */
 require_once( 'checkout-button/block.php' );
-// require_once( 'account-page/block.php' );
-require_once( 'account-membership-section/block.php' );
-require_once( 'account-profile-section/block.php' );
-require_once( 'account-invoices-section/block.php' );
-require_once( 'account-links-section/block.php' );
-require_once( 'billing-page/block.php' );
-require_once( 'cancel-page/block.php' );
-require_once( 'checkout-page/block.php' );
-require_once( 'confirmation-page/block.php' );
-require_once( 'invoice-page/block.php' );
-require_once( 'levels-page/block.php' );
-require_once( 'membership/block.php' );
+require_once( 'block-button/block.php' );
+require_once( 'block-button-too/block.php' );
+
 
 /**
  * Enqueue block editor only JavaScript and CSS
@@ -46,7 +37,6 @@ function pmpro_block_editor_scripts() {
 		filemtime( plugin_dir_path( dirname( __FILE__ ) ) . $block_path )
 	);
 
-	/*
 	// Enqueue optional editor only styles.
 	wp_enqueue_style(
 		'pmpro-editor-css',
@@ -54,11 +44,11 @@ function pmpro_block_editor_scripts() {
 		[ 'wp-blocks' ],
 		filemtime( plugin_dir_path( dirname( __FILE__ ) ) . $editor_style_path )
 	);
-	*/
+
 }
 
 // Hook scripts function into block editor hook.
-add_action( 'enqueue_block_editor_assets',  __NAMESPACE__ . '\pmpro_block_editor_scripts' );
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\pmpro_block_editor_scripts' );
 
 
 /**
@@ -87,4 +77,4 @@ function pmpro_block_scripts() {
 }
 
 // Hook scripts function into block editor hook.
-add_action( 'enqueue_block_assets',  __NAMESPACE__ . '\pmpro_block_scripts' );
+add_action( 'enqueue_block_assets', __NAMESPACE__ . '\pmpro_block_scripts' );
