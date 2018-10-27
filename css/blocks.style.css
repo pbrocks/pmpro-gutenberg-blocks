@@ -1,27 +1,6 @@
-/**
- * Note that these styles are loaded *after* common styles, so that
- * editor-specific styles using the same selectors will take precedence.
- */
-.wp-block-paid-memberships-pro-checkout-button {
-  background-color: #EFEFEF;
-  background-image: none;
-  border: 1px solid #D6D6D6;
-  border-radius: 4px;
-  box-shadow: none;
-  color: #444;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 700;
-  margin: 0;
-  padding: 6px 12px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap; }
+.wp-block-paid-memberships-pro-checkout-button{background-color:#EFEFEF;background-image:none;border:1px solid #D6D6D6;border-radius:4px;box-shadow:none;color:#444;cursor:pointer;display:inline-block;font-size:12px;font-weight:700;margin:0;padding:6px 12px;text-align:center;text-decoration:none;text-transform:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;vertical-align:middle;white-space:nowrap}
+.wp-block-pmpro-account-page{background:#FAFAFA;padding:20px;text-align:center}.wp-block-pmpro-account-page span{color:#AAA;display:block;font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;font-weight:600;position:relative;text-transform:uppercase}.wp-block-pmpro-account-page span:first-child{font-size:125%;font-weight:300;letter-spacing:1px;margin-bottom:10px}
+.wp-block-pmpro-account-membership-section{background:#FAFAFA;padding:20px;text-align:center}.wp-block-pmpro-account-membership-section span{color:#AAA;display:block;font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;font-weight:600;position:relative;text-transform:uppercase}.wp-block-pmpro-account-membership-section span:first-child{font-size:125%;font-weight:300;letter-spacing:1px;margin-bottom:10px}
+.wp-block-pmpro-account-profile-section{background:#FAFAFA;padding:20px;text-align:center}.wp-block-pmpro-account-profile-section span{color:#AAA;display:block;font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;font-weight:600;position:relative;text-transform:uppercase}.wp-block-pmpro-account-profile-section span:first-child{font-size:125%;font-weight:300;letter-spacing:1px;margin-bottom:10px}
+.wp-block-pmpro-account-invoices-section{background:#FAFAFA;padding:20px;text-align:center}.wp-block-pmpro-account-invoices-section span{color:#AAA;display:block;font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;font-weight:700;position:relative;text-transform:uppercase}.wp-block-pmpro-account-invoices-section span:first-child{font-size:125%;font-weight:300;letter-spacing:1px;margin-bottom:10px}
+.wp-block-pmpro-account-links-section{background:#FAFAFA;padding:20px;text-align:center}.wp-block-pmpro-account-links-section span{color:#AAA;display:block;font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;font-weight:600;position:relative;text-transform:uppercase}.wp-block-pmpro-account-links-section span:first-child{font-size:125%;font-weight:300;letter-spacing:1px;margin-bottom:10px}

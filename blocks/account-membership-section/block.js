@@ -37,8 +37,8 @@ const {
  export default registerBlockType(
      'pmpro/account-membership-section',
      {
-         title: __( 'PMPro Account Membership Section', 'paid-memberships-pro' ),
-         description: __( 'Displays a user\'s membership information', 'paid-memberships-pro' ),
+         title: __( 'PMPro Membership Account: Memberships', 'paid-memberships-pro' ),
+         description: __( 'Displays the members\'s membership information.', 'paid-memberships-pro' ),
          category: 'pmpro',
          icon: 'groups',
          keywords: [
@@ -50,9 +50,10 @@ const {
          edit: props => {
              const { className } = props;
              return [
-                <div className={ className }>
-                  "Account Membership Section Placeholder"
-                </div>
+                 <div className={ className }>
+                   <span>Paid Memberships Pro</span>
+                   <span>Membership Account: My Memberships</span>
+                 </div>
             ];
          },
          save() {

@@ -37,8 +37,8 @@ const {
  export default registerBlockType(
      'pmpro/account-invoices-section',
      {
-         title: __( 'PMPro Account Invoices Section', 'paid-memberships-pro' ),
-         description: __( 'Displays a user\'s invoices information', 'paid-memberships-pro' ),
+         title: __( 'PMPro Membership Account: Invoices', 'paid-memberships-pro' ),
+         description: __( 'Displays the member\'s invoices.', 'paid-memberships-pro' ),
          category: 'pmpro',
          icon: 'archive',
          keywords: [
@@ -51,7 +51,8 @@ const {
              const { className } = props;
              return [
                 <div className={ className }>
-                  "Account Invoices Section Placeholder"
+                  <span>Paid Memberships Pro</span>
+                  <span>Membership Account: Invoices</span>
                 </div>
             ];
          },

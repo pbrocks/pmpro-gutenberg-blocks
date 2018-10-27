@@ -38,10 +38,10 @@ const {
  export default registerBlockType(
      'pmpro/account-page',
      {
-         title: __( 'PMPro Account Page', 'paid-memberships-pro' ),
-         description: __( 'Displays a user\'s account information', 'paid-memberships-pro' ),
+         title: __( 'PMPro Membership Account', 'paid-memberships-pro' ),
+         description: __( 'Displays the member\'s full account information.', 'paid-memberships-pro' ),
          category: 'pmpro',
-         icon: 'id',
+         icon: 'admin-users',
          keywords: [
          ],
          supports: {
@@ -69,7 +69,8 @@ const {
              return [
                 isSelected && <Inspector { ...{ setAttributes, ...props} } />,
                 <div className={ className }>
-                  "Account Page Placeholder"
+                  <span>Paid Memberships Pro</span>
+                  <span>Membership Account</span>
                 </div>
             ];
          },
