@@ -1,8 +1,7 @@
 /**
- * Block: PMPro invoice Button
+ * Block: PMPro Membership Invoices
  *
- * Add a styled link to the PMPro invoice page for a
- * specific level.
+ * Displays the Membership Invoices template.
  *
  */
  /**
@@ -37,12 +36,15 @@ const {
  export default registerBlockType(
      'pmpro/invoice-page',
      {
-         title: __( 'PMPro Invoice Page', 'paid-memberships-pro' ),
-         description: __( 'This page shows a single membership invoice or a list of all membership invoices for the current user.', 'paid-memberships-pro' ),
+         title: __( 'Membership Invoice Page', 'paid-memberships-pro' ),
+         description: __( 'Displays the member\'s  Membership Invoices.', 'paid-memberships-pro' ),
          category: 'pmpro',
-         icon: 'archive',
-         keywords: [
-         ],
+         icon: {
+            background: '#2997c8',
+            foreground: '#ffffff',
+            src: 'archive',
+         },
+         keywords: [ __( 'pmpro', 'paid-memberships-pro' ) ],
          supports: {
          },
          attributes: {
@@ -50,9 +52,10 @@ const {
          edit: props => {
              const { className } = props;
              return [
-                <div className={ className }>
-                  "Invoice Page Placeholder"
-                </div>
+                 <div className={ className }>
+                   <span>Paid Memberships Pro</span>
+                   <span>Membership Invoices</span>
+                 </div>
             ];
          },
          save() {

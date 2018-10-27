@@ -1,8 +1,7 @@
 /**
- * Block: PMPro Checkout Button
+ * Block: PMPro Membership Cancel
  *
- * Add a styled link to the PMPro checkout page for a
- * specific level.
+ * Displays the Membership Cancel page.
  *
  */
  /**
@@ -37,12 +36,15 @@ const {
  export default registerBlockType(
      'pmpro/cancel-page',
      {
-         title: __( 'PMPro Cancel Page', 'paid-memberships-pro' ),
-         description: __( 'This page shows links for a member to cancel their membership or a link to return to the Membership Account page.', 'paid-memberships-pro' ),
+         title: __( 'Membership Cancel', 'paid-memberships-pro' ),
+         description: __( 'Displays links for a member to cancel their membership or return to the Membership Account page.', 'paid-memberships-pro' ),
          category: 'pmpro',
-         icon: 'no',
-         keywords: [
-         ],
+         icon: {
+            background: '#2997c8',
+            foreground: '#ffffff',
+            src: 'no',
+         },
+         keywords: [ __( 'pmpro', 'paid-memberships-pro' ) ],
          supports: {
          },
          attributes: {
@@ -50,9 +52,10 @@ const {
          edit: props => {
              const { className } = props;
              return [
-                <div className={ className }>
-                  "Cancel Page Placeholder"
-                </div>
+                 <div className={ className }>
+                   <span>Paid Memberships Pro</span>
+                   <span>Membership Cancel</span>
+                 </div>
             ];
          },
          save() {

@@ -37,12 +37,15 @@ const {
  export default registerBlockType(
      'pmpro/account-profile-section',
      {
-         title: __( 'PMPro Membership Account: Profile', 'paid-memberships-pro' ),
+         title: __( 'Membership Account: Profile', 'paid-memberships-pro' ),
          description: __( 'Displays the member\'s profile information.', 'paid-memberships-pro' ),
          category: 'pmpro',
-         icon: 'admin-users',
-         keywords: [
-         ],
+         icon: {
+            background: '#2997c8',
+            foreground: '#ffffff',
+            src: 'admin-users',
+         },
+         keywords: [ __( 'pmpro', 'paid-memberships-pro' ) ],
          supports: {
          },
          attributes: {

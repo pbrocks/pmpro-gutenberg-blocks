@@ -31,7 +31,7 @@ function register_dynamic_block() {
 }
 
 /**
- * Server rendering for /blocks/examples/12-dynamic
+ * Server rendering for account-page block.
  *
  * @param array $attributes contains text, level, and css_class strings.
  * @return string

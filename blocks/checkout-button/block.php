@@ -2,7 +2,7 @@
 /**
  * Sets up checkout-button block, does not format frontend
  *
- * @package blocks/checkcout-button
+ * @package blocks/checkout-button
  **/
 
 namespace PMPro\blocks\checkout_button;
@@ -31,7 +31,7 @@ function register_dynamic_block() {
 }
 
 /**
- * Server rendering for /blocks/examples/12-dynamic
+ * Server rendering for checkout-button block.
  *
  * @param array $attributes contains text, level, and css_class strings.
  * @return string

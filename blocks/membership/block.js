@@ -68,15 +68,15 @@ jQuery(document).ready(function($) {
  export default registerBlockType(
      'pmpro/membership',
      {
-         title: __( 'PMPro Membership Check', 'paid-memberships-pro' ),
-         description: __( 'Only shows content to specific levels.', 'paid-memberships-pro' ),
+         title: __( 'Restrict by Membership Level', 'paid-memberships-pro' ),
+         description: __( 'Reveal nested content for specific membership levels.', 'paid-memberships-pro' ),
          category: 'pmpro',
-         icon: 'hidden',
-         keywords: [
-         ],
-         supports: {
-           align: [ 'wide', 'full' ],
+         icon: {
+            background: '#2997c8',
+            foreground: '#ffffff',
+            src: 'hidden',
          },
+         keywords: [ __( 'pmpro', 'paid-memberships-pro' ) ],
          attributes: {
              levels: {
                  type: 'array',
@@ -106,7 +106,7 @@ jQuery(document).ready(function($) {
                     </PanelBody>
                 </InspectorControls>,
                 isSelected && <div className={ className } >
-                  <h3>PMPro Membership Block</h3>
+                  <span class="pmpro-membership-title">Restrict by Membership Level</span>
                   <PanelBody>
                       <SelectControl
                           multiple
@@ -116,11 +116,12 @@ jQuery(document).ready(function($) {
                           options={ all_levels }
                       />
                   </PanelBody>
-                  <InnerBlocks />
+                  <InnerBlocks templateLock={ false } />
                 </div>,
                 ! isSelected && <div className={ className } >
-                  <h3>PMPro Membership Block</h3>
-                  <InnerBlocks />
+                  /** TO DO: Show the levels as a comma-separated list of names. **/
+                  <span class="pmpro-membership-title">Restrict by Membership Level: { levels }</span>
+                  <InnerBlocks templateLock={ false } />
                 </div>,
             ];
          },

@@ -1,8 +1,7 @@
 /**
- * Block: PMPro confirmation Button
+ * Block: PMPro Membership Confirmation
  *
- * Add a styled link to the PMPro confirmation page for a
- * specific level.
+ * Displays the Membership Confirmation template.
  *
  */
  /**
@@ -37,12 +36,15 @@ const {
  export default registerBlockType(
      'pmpro/confirmation-page',
      {
-         title: __( 'PMPro Confirmation Page', 'paid-memberships-pro' ),
-         description: __( 'This page shows the confirmation message and details that are displayed after membership checkout.', 'paid-memberships-pro' ),
+         title: __( 'Membership Confirmation Page', 'paid-memberships-pro' ),
+         description: __( 'Displays the member\'s Membership Confirmation after Membership Checkout.', 'paid-memberships-pro' ),
          category: 'pmpro',
-         icon: 'yes',
-         keywords: [
-         ],
+         icon: {
+            background: '#2997c8',
+            foreground: '#ffffff',
+            src: 'yes',
+         },
+         keywords: [ __( 'pmpro', 'paid-memberships-pro' ) ],
          supports: {
          },
          attributes: {
@@ -51,7 +53,8 @@ const {
              const { className } = props;
              return [
                 <div className={ className }>
-                  "Confirmation Page Placeholder"
+                   <span>Paid Memberships Pro</span>
+                   <span>Membership Confirmation</span>
                 </div>
             ];
          },

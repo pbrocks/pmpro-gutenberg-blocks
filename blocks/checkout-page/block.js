@@ -1,8 +1,7 @@
 /**
- * Block: PMPro Checkout Button
+ * Block: PMPro Membership Checkout
  *
- * Add a styled link to the PMPro checkout page for a
- * specific level.
+ * Displays the Membership Checkout form.
  *
  */
  /**
@@ -10,6 +9,7 @@
   */
  import './style.scss';
  import classnames from 'classnames';
+ import Inspector from './inspector';
  /**
   * Internal block libraries
   */
@@ -22,12 +22,10 @@
 } = wp.blocks;
 const {
     PanelBody,
-    PanelRow,
     TextControl,
 } = wp.components;
 
 const {
-    RichText,
     InspectorControls,
 } = wp.editor;
 
@@ -37,21 +35,29 @@ const {
  export default registerBlockType(
      'pmpro/checkout-page',
      {
-         title: __( 'PMPro Checkout Page', 'paid-memberships-pro' ),
-         description: __( 'This page shows the checkout form.', 'paid-memberships-pro' ),
+         title: __( 'Membership Checkout', 'paid-memberships-pro' ),
+         description: __( 'Displays the Membership Checkout form.', 'paid-memberships-pro' ),
          category: 'pmpro',
-         icon: 'cart',
-         keywords: [
-         ],
+         icon: {
+            background: '#2997c8',
+            foreground: '#ffffff',
+            src: 'cart',
+         },
+         keywords: [ __( 'pmpro', 'paid-memberships-pro' ) ],
          supports: {
          },
          attributes: {
+             level: {
+                 type: 'integer',
+             },
          },
          edit: props => {
-             const { className } = props;
+             const { attributes: { fields }, className, setAttributes, isSelected } = props;
              return [
+                isSelected && <Inspector { ...{ setAttributes, ...props} } />,
                 <div className={ className }>
-                  "Checkout Page Placeholder"
+                  <span>Paid Memberships Pro</span>
+                  <span>Membership Checkout</span>
                 </div>
             ];
          },

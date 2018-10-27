@@ -1,8 +1,7 @@
 /**
- * Block: PMPro levels Button
+ * Block: PMPro Membership Levels
  *
- * Add a styled link to the PMPro levels page for a
- * specific level.
+ * Displays the Membership Levels template.
  *
  */
  /**
@@ -37,12 +36,15 @@ const {
  export default registerBlockType(
      'pmpro/levels-page',
      {
-         title: __( 'PMPro Levels Page', 'paid-memberships-pro' ),
-         description: __( 'This page shows the membership level options available displayed in the order sorted via the Memberships > Membership Levels admin', 'paid-memberships-pro' ),
+         title: __( 'Membership Levels Page', 'paid-memberships-pro' ),
+         description: __( 'Displays the Membership Levels in the order sorted via the Memberships > Membership Levels admin.', 'paid-memberships-pro' ),
          category: 'pmpro',
-         icon: 'chart-bar',
-         keywords: [
-         ],
+         icon: {
+            background: '#2997c8',
+            foreground: '#ffffff',
+            src: 'chart-bar',
+         },
+         keywords: [ __( 'pmpro', 'paid-memberships-pro' ) ],
          supports: {
          },
          attributes: {
@@ -50,9 +52,10 @@ const {
          edit: props => {
              const { className } = props;
              return [
-                <div className={ className }>
-                  "Levels Page Placeholder"
-                </div>
+                 <div className={ className }>
+                   <span>Paid Memberships Pro</span>
+                   <span>Membership Levels</span>
+                 </div>
             ];
          },
          save() {

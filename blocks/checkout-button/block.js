@@ -34,11 +34,16 @@ const {
  export default registerBlockType(
      'pmpro/checkout-button',
      {
-         title: __( 'PMPro Checkout Button', 'paid-memberships-pro' ),
-         description: __( 'Let users check out for a level.', 'paid-memberships-pro' ),
+         title: __( 'Membership Checkout Button', 'paid-memberships-pro' ),
+         description: __( 'Displays a button-styled link to Membership Checkout for the specified level.', 'paid-memberships-pro' ),
          category: 'pmpro',
-         icon: 'migrate',
-         keywords: [
+         icon: {
+            background: '#2997c8',
+            foreground: '#ffffff',
+            src: 'migrate',
+         },
+         keywords: [ 
+             __( 'pmpro', 'paid-memberships-pro' ), 
              __( 'buy', 'paid-memberships-pro' ),
              __( 'level', 'paid-memberships-pro' ),
          ],

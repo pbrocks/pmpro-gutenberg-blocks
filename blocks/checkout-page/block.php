@@ -30,11 +30,17 @@ function register_dynamic_block() {
 }
 
 /**
- * Server rendering for /blocks/examples/12-dynamic
+ * Server rendering for checkout-page block.
  *
- * @param array $attributes contains text, level, and css_class strings.
+ * @param array $attributes contains level.
  * @return string
  **/
 function render_dynamic_block( $attributes ) {
+	$atts = '';
+	if ( ! empty( $attributes['level'] ) ) {
+		$atts = [ 'level' => intval( $attributes['level'] ) ];
+	}
+	// TO DO: Apply the specificed Level ID to the checkout page. 
+	// d ( $atts );
 	return pmpro_loadTemplate( 'checkout', 'local', 'pages' );
 }

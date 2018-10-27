@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Paid Memberships Pro - Gutenberg Blocks
+ * Plugin Name: Paid Memberships Pro - Gutenberg Blocks Add On
  * Plugin URI: https://www.paidmembershipspro.com
  * Description: Paid Memberships Pro Add On to deliver PMPro functionality in WP Blocks
  * Version: 1.1
