@@ -1,8 +1,7 @@
 /**
- * Block: PMPro Checkout Button
+ * Block: PMPro Membership Account: Memberships
  *
- * Add a styled link to the PMPro checkout page for a
- * specific level.
+ * Displays the Membership Account > My Memberships page section.
  *
  */
  /**
@@ -37,12 +36,15 @@ const {
  export default registerBlockType(
      'pmpro/account-membership-section',
      {
-         title: __( 'PMPro Account Membership Section', 'paid-memberships-pro' ),
-         description: __( 'Displays a user\'s membership information', 'paid-memberships-pro' ),
+         title: __( 'Membership Account: Memberships', 'paid-memberships-pro' ),
+         description: __( 'Displays the members\'s membership information.', 'paid-memberships-pro' ),
          category: 'pmpro',
-         icon: 'groups',
-         keywords: [
-         ],
+         icon: {
+            background: '#2997c8',
+            foreground: '#ffffff',
+            src: 'groups',
+         },
+         keywords: [ __( 'pmpro', 'paid-memberships-pro' ) ],
          supports: {
          },
          attributes: {
@@ -50,9 +52,10 @@ const {
          edit: props => {
              const { className } = props;
              return [
-                <div className={ className }>
-                  "Account Membership Section Placeholder"
-                </div>
+                 <div className={ className }>
+                   <span>Paid Memberships Pro</span>
+                   <span>Membership Account: My Memberships</span>
+                 </div>
             ];
          },
          save() {

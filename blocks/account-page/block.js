@@ -1,8 +1,7 @@
 /**
- * Block: PMPro Checkout Button
+ * Block: PMPro Membership Account
  *
- * Add a styled link to the PMPro checkout page for a
- * specific level.
+ * Displays the Membership Account page.
  *
  */
  /**
@@ -38,12 +37,15 @@ const {
  export default registerBlockType(
      'pmpro/account-page',
      {
-         title: __( 'PMPro Account Page', 'paid-memberships-pro' ),
-         description: __( 'Displays a user\'s account information', 'paid-memberships-pro' ),
+         title: __( 'Membership Account', 'paid-memberships-pro' ),
+         description: __( 'Displays the member\'s full account information.', 'paid-memberships-pro' ),
          category: 'pmpro',
-         icon: 'id',
-         keywords: [
-         ],
+         icon: {
+            background: '#2997c8',
+            foreground: '#ffffff',
+            src: 'admin-users',
+         },
+         keywords: [ __( 'pmpro', 'paid-memberships-pro' ) ],
          supports: {
          },
          attributes: {
@@ -69,7 +71,8 @@ const {
              return [
                 isSelected && <Inspector { ...{ setAttributes, ...props} } />,
                 <div className={ className }>
-                  "Account Page Placeholder"
+                  <span>Paid Memberships Pro</span>
+                  <span>Membership Account</span>
                 </div>
             ];
          },

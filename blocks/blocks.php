@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
  * Dynamic Block Requires
  */
 require_once( 'checkout-button/block.php' );
-// require_once( 'account-page/block.php' );
+require_once( 'account-page/block.php' );
 require_once( 'account-membership-section/block.php' );
 require_once( 'account-profile-section/block.php' );
 require_once( 'account-invoices-section/block.php' );

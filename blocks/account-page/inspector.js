@@ -28,28 +28,28 @@ export default class Inspector extends Component {
           <InspectorControls>
               <PanelBody>
                 <CheckboxControl
-                    label="Show Membership Section"
+                    label="Show 'My Memberships' Section"
                     checked={ membership }
                     onChange={ membership => setAttributes( {membership} ) }
                 />
               </PanelBody>
               <PanelBody>
                 <CheckboxControl
-                  label="Show Profiole Section"
+                  label="Show 'Profile' Section"
                   checked={ profile }
                   onChange={ profile => setAttributes( {profile} ) }
                   />
               </PanelBody>
               <PanelBody>
                 <CheckboxControl
-                  label="Show Invoices Section"
+                  label="Show 'Invoices' Section"
                   checked={ invoices }
                   onChange={ invoices => setAttributes( {invoices} ) }
                   />
               </PanelBody>
               <PanelBody>
                 <CheckboxControl
-                  label="Show Links Section"
+                  label="Show 'Member Links' Section"
                   checked={ links }
                   onChange={ links => setAttributes( {links} ) }
                   />

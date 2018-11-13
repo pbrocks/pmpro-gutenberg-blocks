@@ -41,7 +41,7 @@ function pmpro_get_all_levels_ajax() {
 add_action( 'wp_ajax_pmpro_get_all_levels', __NAMESPACE__ . '\pmpro_get_all_levels_ajax' );
 
 /**
- * Server rendering for /blocks/examples/12-dynamic
+ * Server rendering for membership block.
  *
  * @param array $attributes contains text, level, and css_class strings.
  * @return string

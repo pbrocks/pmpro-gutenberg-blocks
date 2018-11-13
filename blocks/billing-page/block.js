@@ -1,8 +1,7 @@
 /**
- * Block: PMPro Checkout Button
+ * Block: PMPro Membership Billing
  *
- * Add a styled link to the PMPro checkout page for a
- * specific level.
+ * Displays the Membership Billing page and form.
  *
  */
  /**
@@ -37,22 +36,26 @@ const {
  export default registerBlockType(
      'pmpro/billing-page',
      {
-         title: __( 'PMPro Billing Page', 'paid-memberships-pro' ),
-         description: __( 'For members with an active subscription, this page shows the member’s billing information and allows them to update the payment method.', 'paid-memberships-pro' ),
+         title: __( 'Membership Billing', 'paid-memberships-pro' ),
+         description: __( 'Displays the member\'s billing information and allows them to update the payment method.', 'paid-memberships-pro' ),
          category: 'pmpro',
-         icon: 'format-aside',
-         keywords: [
-         ],
-         supports: {
-         },
-         attributes: {
-         },
+         icon: {
+            background: '#2997c8',
+            foreground: '#ffffff',
+            src: 'tag',
+        },
+        keywords: [ __( 'pmpro', 'paid-memberships-pro' ) ],
+        supports: {
+        },
+        attributes: {
+        },
          edit: props => {
              const { className } = props;
              return [
-                <div className={ className }>
-                  "Billing Page Placeholder"
-                </div>
+                 <div className={ className }>
+                   <span>Paid Memberships Pro</span>
+                   <span>Membership Billing</span>
+                 </div>
             ];
          },
          save() {

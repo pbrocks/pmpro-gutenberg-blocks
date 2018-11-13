@@ -1,8 +1,8 @@
 <?php
 /**
- * Sets up account-page block, does not format frontend
+ * Sets up account-links-section block, does not format frontend
  *
- * @package blocks/account-page
+ * @package blocks/account-links-section
  **/
 
 namespace PMPro\blocks\account_links_section;
@@ -30,7 +30,7 @@ function register_dynamic_block() {
 }
 
 /**
- * Server rendering for /blocks/examples/12-dynamic
+ * Server rendering for account-links-section block.
  *
  * @return string
  **/

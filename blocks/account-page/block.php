@@ -24,15 +24,14 @@ add_action( 'init', __NAMESPACE__ . '\register_dynamic_block' );
  */
 function register_dynamic_block() {
 	// Hook server side rendering into render callback.
-	register_block_type(
-		'pmpro/account-page', [
+	register_block_type( 'pmpro/account-page', [
 			'render_callback' => __NAMESPACE__ . '\render_dynamic_block',
 		]
 	);
 }
 
 /**
- * Server rendering for /blocks/examples/12-dynamic
+ * Server rendering for account-page block.
  *
  * @param array $attributes contains text, level, and css_class strings.
  * @return string
