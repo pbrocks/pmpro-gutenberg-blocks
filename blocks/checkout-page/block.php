@@ -36,10 +36,10 @@ function register_dynamic_block() {
  * @return string
  **/
 function render_dynamic_block( $attributes ) {
-	$atts = '';
+	/*$atts = '';
 	if ( ! empty( $attributes['level'] ) ) {
 		$atts = [ 'level' => intval( $attributes['level'] ) ];
-	}
+	}*/
 	// TO DO: Apply the specificed Level ID to the checkout page. 
 	// d ( $atts );
 	return pmpro_loadTemplate( 'checkout', 'local', 'pages' );

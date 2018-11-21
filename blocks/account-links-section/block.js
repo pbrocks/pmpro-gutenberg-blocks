@@ -37,7 +37,7 @@ const {
      'pmpro/account-links-section',
      {
          title: __( 'Membership Account: Links', 'paid-memberships-pro' ),
-         description: __( 'Displays the member\'s member links.', 'paid-memberships-pro' ),
+         description: __( 'Displays the member\'s member links. This block is only visible if other Add Ons or custom code have added links.', 'paid-memberships-pro' ),
          category: 'pmpro',
          icon: {
             background: '#2997c8',

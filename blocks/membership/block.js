@@ -68,13 +68,13 @@ jQuery(document).ready(function($) {
  export default registerBlockType(
      'pmpro/membership',
      {
-         title: __( 'Restrict by Membership Level', 'paid-memberships-pro' ),
-         description: __( 'Reveal nested content for specific membership levels.', 'paid-memberships-pro' ),
+         title: __( 'Require Membership Block', 'paid-memberships-pro' ),
+         description: __( 'Control the visibility of nested blocks for members or non-members.', 'paid-memberships-pro' ),
          category: 'pmpro',
          icon: {
             background: '#2997c8',
             foreground: '#ffffff',
-            src: 'hidden',
+            src: 'visibility',
          },
          keywords: [ __( 'pmpro', 'paid-memberships-pro' ) ],
          attributes: {
@@ -106,7 +106,7 @@ jQuery(document).ready(function($) {
                     </PanelBody>
                 </InspectorControls>,
                 isSelected && <div className={ className } >
-                  <span class="pmpro-membership-title">Restrict by Membership Level</span>
+                  <span class="pmpro-membership-title">Require Membership</span>
                   <PanelBody>
                       <SelectControl
                           multiple
@@ -119,8 +119,7 @@ jQuery(document).ready(function($) {
                   <InnerBlocks templateLock={ false } />
                 </div>,
                 ! isSelected && <div className={ className } >
-                  /** TO DO: Show the levels as a comma-separated list of names. **/
-                  <span class="pmpro-membership-title">Restrict by Membership Level: { levels }</span>
+                  <span class="pmpro-membership-title">Require Membership: { levels }</span>
                   <InnerBlocks templateLock={ false } />
                 </div>,
             ];

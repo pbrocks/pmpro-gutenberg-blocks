@@ -14,7 +14,7 @@ const {
 
 /**
  * Create an Inspector Controls wrapper Component
- */
+ */ 
 export default class Inspector extends Component {
 
     constructor() {
@@ -22,16 +22,16 @@ export default class Inspector extends Component {
     }
 
     render() {
-        const { attributes: { level }, setAttributes } = this.props;
+        const { attributes: { pmpro_default_level }, setAttributes } = this.props;
 
         return (
           <InspectorControls>
           <PanelBody>
              <TextControl
                  label={ __( 'Membership Level', 'paid-memberships-pro' ) }
-                 help={ __( 'Specify a level for Membership Checkout. Leave blank to force a redirect to your Membership Levels page.', 'paid-memberships-pro' ) }
-                 value={ level }
-                 onChange={ level => setAttributes( { level } ) }
+                 help={ __( 'Choose a default level for Membership Checkout.', 'paid-memberships-pro' ) }
+                 value={ pmpro_default_level }
+                 onChange={ pmpro_default_level => setAttributes( { pmpro_default_level } ) }
              />
           </PanelBody>
           </InspectorControls>

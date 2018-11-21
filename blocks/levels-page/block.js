@@ -36,13 +36,13 @@ const {
  export default registerBlockType(
      'pmpro/levels-page',
      {
-         title: __( 'Membership Levels Page', 'paid-memberships-pro' ),
-         description: __( 'Displays the Membership Levels in the order sorted via the Memberships > Membership Levels admin.', 'paid-memberships-pro' ),
+         title: __( 'Membership Levels List', 'paid-memberships-pro' ),
+         description: __( 'Displays a list of Membership Levels. To change the order, go to Memberships > Settings > Levels.', 'paid-memberships-pro' ),
          category: 'pmpro',
          icon: {
             background: '#2997c8',
             foreground: '#ffffff',
-            src: 'chart-bar',
+            src: 'list-view',
          },
          keywords: [ __( 'pmpro', 'paid-memberships-pro' ) ],
          supports: {
@@ -54,7 +54,7 @@ const {
              return [
                  <div className={ className }>
                    <span>Paid Memberships Pro</span>
-                   <span>Membership Levels</span>
+                   <span>Membership Levels List</span>
                  </div>
             ];
          },

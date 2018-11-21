@@ -1,8 +1,7 @@
 /**
  * Block: PMPro Checkout Button
  *
- * Add a styled link to the PMPro checkout page for a
- * specific level.
+ * Add a styled link to the PMPro checkout page for a specific level.
  *
  */
  /**

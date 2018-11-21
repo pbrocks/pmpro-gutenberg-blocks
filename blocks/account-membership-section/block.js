@@ -37,7 +37,7 @@ const {
      'pmpro/account-membership-section',
      {
          title: __( 'Membership Account: Memberships', 'paid-memberships-pro' ),
-         description: __( 'Displays the members\'s membership information.', 'paid-memberships-pro' ),
+         description: __( 'Displays the member\'s membership information.', 'paid-memberships-pro' ),
          category: 'pmpro',
          icon: {
             background: '#2997c8',
