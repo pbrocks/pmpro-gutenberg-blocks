@@ -37,8 +37,8 @@ const {
  export default registerBlockType(
      'pmpro/account-page',
      {
-         title: __( 'Membership Account', 'paid-memberships-pro' ),
-         description: __( 'Displays the member\'s full account information.', 'paid-memberships-pro' ),
+         title: __( 'Membership Account Page', 'paid-memberships-pro' ),
+         description: __( 'Displays the sections of the Membership Account page as selected below.', 'paid-memberships-pro' ),
          category: 'pmpro',
          icon: {
             background: '#2997c8',
@@ -72,7 +72,7 @@ const {
                 isSelected && <Inspector { ...{ setAttributes, ...props} } />,
                 <div className={ className }>
                   <span>Paid Memberships Pro</span>
-                  <span>Membership Account</span>
+                  <span>Membership Account Page</span>
                 </div>
             ];
          },

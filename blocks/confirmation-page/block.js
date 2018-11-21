@@ -54,7 +54,7 @@ const {
              return [
                 <div className={ className }>
                    <span>Paid Memberships Pro</span>
-                   <span>Membership Confirmation</span>
+                   <span>Membership Confirmation Page</span>
                 </div>
             ];
          },

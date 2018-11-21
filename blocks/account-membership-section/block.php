@@ -37,5 +37,5 @@ function register_dynamic_block() {
  * @return string
  **/
 function render_dynamic_block() {
-	return pmpro_shortcode_account( [ 'sections' => 'membership' ] );
+	return pmpro_shortcode_account( array( 'sections' => 'membership' ) );
 }

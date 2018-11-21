@@ -36,13 +36,13 @@ const {
  export default registerBlockType(
      'pmpro/billing-page',
      {
-         title: __( 'Membership Billing', 'paid-memberships-pro' ),
+         title: __( 'Membership Billing Page', 'paid-memberships-pro' ),
          description: __( 'Displays the member\'s billing information and allows them to update the payment method.', 'paid-memberships-pro' ),
          category: 'pmpro',
          icon: {
             background: '#2997c8',
             foreground: '#ffffff',
-            src: 'tag',
+            src: 'list-view',
         },
         keywords: [ __( 'pmpro', 'paid-memberships-pro' ) ],
         supports: {
@@ -54,7 +54,7 @@ const {
              return [
                  <div className={ className }>
                    <span>Paid Memberships Pro</span>
-                   <span>Membership Billing</span>
+                   <span>Membership Billing Page</span>
                  </div>
             ];
          },

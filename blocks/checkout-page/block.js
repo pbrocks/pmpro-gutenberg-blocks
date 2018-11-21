@@ -35,13 +35,13 @@ const {
  export default registerBlockType(
      'pmpro/checkout-page',
      {
-         title: __( 'Membership Checkout', 'paid-memberships-pro' ),
+         title: __( 'Membership Checkout Form', 'paid-memberships-pro' ),
          description: __( 'Displays the Membership Checkout form.', 'paid-memberships-pro' ),
          category: 'pmpro',
          icon: {
             background: '#2997c8',
             foreground: '#ffffff',
-            src: 'cart',
+            src: 'list-view',
          },
          keywords: [ __( 'pmpro', 'paid-memberships-pro' ) ],
          supports: {
@@ -57,7 +57,7 @@ const {
                 isSelected && <Inspector { ...{ setAttributes, ...props} } />,
                 <div className={ className }>
                   <span>Paid Memberships Pro</span>
-                  <span>Membership Checkout</span>
+                  <span>Membership Checkout Form</span>
                 </div>
             ];
          },

@@ -36,8 +36,8 @@ const {
  export default registerBlockType(
      'pmpro/cancel-page',
      {
-         title: __( 'Membership Cancel', 'paid-memberships-pro' ),
-         description: __( 'Displays links for a member to cancel their membership or return to the Membership Account page.', 'paid-memberships-pro' ),
+         title: __( 'Membership Cancel Page', 'paid-memberships-pro' ),
+         description: __( 'Generates the Membership Cancel page.', 'paid-memberships-pro' ),
          category: 'pmpro',
          icon: {
             background: '#2997c8',
@@ -54,7 +54,7 @@ const {
              return [
                  <div className={ className }>
                    <span>Paid Memberships Pro</span>
-                   <span>Membership Cancel</span>
+                   <span>Membership Cancel Page</span>
                  </div>
             ];
          },
