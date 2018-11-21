@@ -42,7 +42,7 @@ function pmpro_block_editor_scripts() {
 	wp_enqueue_script(
 		'pmpro-blocks-js',
 		plugins_url( $block_path, dirname( __FILE__ ) ),
-		[ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-api' ],
+		[ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-api', 'wp-editor' ],
 		filemtime( plugin_dir_path( dirname( __FILE__ ) ) . $block_path )
 	);
 
